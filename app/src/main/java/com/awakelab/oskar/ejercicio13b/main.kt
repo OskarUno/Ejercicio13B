@@ -8,12 +8,10 @@ data class Heroe(
 
     )
 
-fun main(){
-    //  var i = 0
+fun main() {
     println("Ingrese super Heroes, para salir presione   ")
-    // var cant:Int = readln().toInt()
     var heroes = mutableListOf<Heroe>()
-    var cant : Int= 1;
+    var cant: Int = 1;
     while (cant == 1) {
         print("Nombre: ")
         var superHero = readln()
@@ -26,14 +24,13 @@ fun main(){
 
         print("photo: ")
         var photo = readln()
-        heroes.add(Heroe(superHero,publisher,realName,photo))
+        heroes.add(Heroe(superHero, publisher, realName, photo))
 
         print("Para Salir Presiones 'S' o 's' ")
         val salirContuar = readln()
-        if(salirContuar == "S" || salirContuar == "s"){
+        if (salirContuar == "S" || salirContuar == "s") {
             cant = 0
         }
-        // i++
     }
 
     for (h in heroes) {
